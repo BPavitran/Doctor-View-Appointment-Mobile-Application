@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bosspavi.patientmanagement">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Doctor Application"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Doctor"
+            android:label="Welcome"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AppointmentView"
+            android:label="Today Appointment List"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TimeTable"
+            android:label="Time Table"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Information"
+            android:label="Self information"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".InformationUpdate"
+            android:label="Self Information Update"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>
